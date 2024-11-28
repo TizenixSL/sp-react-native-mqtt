@@ -1,6 +1,6 @@
 {
-  "name": "@mobile-modules/healthapp-module-sp-react-naive-mqtt",
-  "version": "0.5.2",
+  "name": "sp-react-naive-mqtts",
+  "version": "0.5.3",
   "description": "MQTT client for react-native",
   "main": "index.js",
   "scripts": {
