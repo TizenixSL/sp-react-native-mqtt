@@ -1,6 +1,6 @@
 {
-  "name": "@tizenixsl/sp-react-native-mqtt",
-  "version": "0.5.1",
+  "name": "@mobile-modules/healthapp-module-sp-react-naive-mqtt",
+  "version": "0.5.2",
   "description": "MQTT client for react-native",
   "main": "index.js",
   "scripts": {
@@ -54,6 +54,23 @@
   "homepage": "https://github.com/SudoPlz/react-native-mqtt#readme",
   "packageManager": "yarn@1.22.22",
   "publishConfig": {
-    "name": "@tizenixSL/sp-react-native-mqtt"
+    "registry": "https://artifactory.kcr.eficode.io/api/npm/konecranes-mobile-modules/"
+  },
+  "release-it": {
+    "git": {
+      "commitMessage": "chore: release ${version}",
+      "tagName": "v${version}"
+    },
+    "npm": {
+      "publish": true
+    },
+    "github": {
+      "release": true
+    },
+    "plugins": {
+      "@release-it/conventional-changelog": {
+        "preset": "angular"
+      }
+    }
   }
 }
