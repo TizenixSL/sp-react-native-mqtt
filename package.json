@@ -52,5 +52,8 @@
     "url": "https://github.com/SudoPlz/react-native-mqtt/issues"
   },
   "homepage": "https://github.com/SudoPlz/react-native-mqtt#readme",
-  "packageManager": "yarn@1.22.22"
+  "packageManager": "yarn@1.22.22",
+  "publishConfig": {
+    "name": "@tizenixSL/sp-react-native-mqtt"
+  }
 }
