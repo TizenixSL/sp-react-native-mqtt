@@ -80,7 +80,7 @@
     }
 
     NSArray *certificates = nil;
-    if(securityPolicy != nil && self.options[@"certificate"] && self.options[@"tls"]){
+    if(securityPolicy != nil && [self.options[@"certificate"] length] > 0){    
 
         @try {
 
