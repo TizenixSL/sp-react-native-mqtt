@@ -80,7 +80,7 @@
     }
 
     NSArray *certificates = nil;
-    if(securityPolicy != nil && self.options[@"certificate"]){
+    if(securityPolicy != nil && self.options[@"certificate"] && self.options[@"tls"]){
 
         @try {
 
@@ -95,8 +95,6 @@
             OSStatus importStatus = SecPKCS12Import((__bridge CFDataRef)base64Data,
                                                         (__bridge CFDictionaryRef)@{(__bridge id)kSecImportExportPassphrase: @""},
                                                         &keyref);
-            NSLog(@"[MQTTS] import status certificate %@", importStatus);
-            
             
             OSStatus err = noErr;
             SecCertificateRef rootCert = SecCertificateCreateWithData(kCFAllocatorDefault, (CFDataRef) base64DataCA);
@@ -114,8 +112,6 @@
             } else {
                 NSLog(@"install root certificate failure");
             }
-
-            NSLog(@"[MQTTS] import status CA %@",result);
 
             CFDictionaryRef identityDict = CFArrayGetValueAtIndex(keyref, 0);
 
