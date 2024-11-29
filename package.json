@@ -1,6 +1,6 @@
 {
-  "name": "@tizenixsl/sp-react-native-mqtt",
-  "version": "0.5.5",
+  "name": "@kc-subapp-modules/sp-react-native-mqtt",
+  "version": "0.5.6",
   "description": "MQTT client for react-native",
   "main": "index.js",
   "scripts": {
@@ -54,7 +54,7 @@
   "homepage": "https://github.com/SudoPlz/react-native-mqtt#readme",
   "packageManager": "yarn@1.22.22",
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "registry": "https://artifactory.kcr.eficode.io/api/npm/konecranes-mobile-modules"
   },
   "release-it": {
     "git": {
